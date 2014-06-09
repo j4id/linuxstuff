@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <title>Learn2Crack - Proxy</title>
+  <link rel="stylesheet" href="static/base.2.css" type="text/css" charset="utf-8"/>
+  <link rel="icon" href="http://www.learn2crack.com/favicon.ico" type="image/vnd.microsoft.icon" />
+  <script type="text/javascript" charset="utf-8">
+    var activeColor = "#000000";
+    var disabledColor = "#959595";
+    var defaultValue = "type url here...";
+    
+    function loadBox() {
+      var box = document.getElementById("url_entry");
+      if (box.value != defaultValue) {
+        box.style.color = activeColor;
+      }
+    }
+    
+    function focusBox() {
+      var box = document.getElementById("url_entry");
+      if (box.value == defaultValue) {
+        box.value = "";
+        box.style.color = activeColor;
+      }
+    }
+    
+    function blurBox() {
+      var box = document.getElementById("url_entry");
+      if (box.value == "") {
+        box.style.color = disabledColor;
+        box.value = defaultValue;
+      }
+    }
+  </script>
+</head>
+<body onload="loadBox();">
+
+<div id="wrapper">
+<div id="container">
+
+<div id="header">
+  <span>Learn2Crack - Proxy Server</span>
+</div>
+
+<div id="form_wrapper">
+  <form action="" method="get" accept-charset="utf-8">
+  <div id="input_wrapper">
+    <input onfocus="focusBox();" onblur="blurBox();" type="text" name="url" value="Enter url here..." id="url_entry"/><input id="go_button" type="submit" value="Go"/>
+  </div>
+  </form>
+
+  <div id="warning"><center>
+  <b>Powered by</b> <a href = "http://www.learn2crack.com">Learn2Crack</a></center>
+  </div>
+</div>
+
+
+
+
+
+</div>
+</div>
+  <div id="footer" style="text-align:center"><p>Copyright © 2013 <a href = "http://www.learn2crack.com">Learn2Crack</a></p></div>
+
+
+
+</body>
+</html>
